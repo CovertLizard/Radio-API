@@ -1,5 +1,5 @@
 # Radio-API
 An API designed for playing MIDI files to Minecraft clients through the Bukkit API.
 
-[Caveats](https://github.com/CovertLizard/Radio-API/blob/master/CAVEATS.md)<br>
-[Maven](https://github.com/CovertLizard/Radio-API/blob/master/MAVEN.md)
++ [Maven](https://github.com/CovertLizard/Radio-API/blob/master/MAVEN.md)
++ [Caveats](https://github.com/CovertLizard/Radio-API/blob/master/Caveats.md)<br>
