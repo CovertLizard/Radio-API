@@ -22,7 +22,10 @@ public class MidiSound
     {
         this.file = file;
         this.title = title;
+        if(this.file == null) throw new IllegalArgumentException("The file cannot be NULL.");
+        if(this.title == null) throw new IllegalArgumentException("The title cannot be NULL.");
     }
+
     public File getFile()
     {
         return this.file;
