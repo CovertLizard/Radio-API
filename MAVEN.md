@@ -1,0 +1,24 @@
+<h4><b>To use this project with maven please add the following to your pom.xml file.</b></h4>
+<hr></hr>
+```
+    <repositories>
+         <!--........-->
+        <repository>
+           <id>ossrh</id>
+           <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </repository>
+        <!--........-->
+    </repositories>
+```
+<hr></hr>
+```
+    <dependencies>
+         <!--........-->
+         <dependency>
+           <groupId>com.github.covertlizard</groupId>
+           <artifactId>Radio-API</artifactId>
+           <version>1.0-SNAPSHOT</version>
+         </dependency>
+         <!--........-->
+    </dependencies>
+```

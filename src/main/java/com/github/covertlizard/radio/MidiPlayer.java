@@ -35,8 +35,14 @@ public class MidiPlayer implements Receiver, MetaEventListener
     //======================================================================
     //                        Class methods
     //======================================================================
+
     /**
-     * Begins playing the music to the specified players
+     * Begins playing the midi file to the players
+     * @param plugin the plugin instance
+     * @param players the players to play to
+     * @throws MidiUnavailableException
+     * @throws InvalidMidiDataException
+     * @throws IOException
      */
     public void play(JavaPlugin plugin, Collection<Player> players) throws MidiUnavailableException, InvalidMidiDataException, IOException
     {
@@ -50,11 +56,7 @@ public class MidiPlayer implements Receiver, MetaEventListener
         this.sequencer.getTransmitters().forEach(transmitter -> transmitter.setReceiver(this));
         this.sequencer.setSequence(MidiSystem.getSequence(this.sound.getFile()));
         this.sequencer.start();
-        //   this.task = plugin.getServer().getScheduler().runTaskTimer(plugin, () ->
-        //  {
-        //     if(!this.play || this.pause || this.players.isEmpty() || this.sequencer.isRunning() || this.sequencer.getMicrosecondPosition() < this.sequencer.getMicrosecondLength()) return;
-        //     //todo stop
-        // }, 20, 20).getTaskId();
+
     }
 
     /**
