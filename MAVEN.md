@@ -1,6 +1,5 @@
 [Home](https://github.com/CovertLizard/Radio-API)
 <h4><b>To use this project with maven please add the following to your pom.xml file.</b></h4>
-<br>
 ```
     <repositories>
          <!--........-->
@@ -11,7 +10,6 @@
         <!--........-->
     </repositories>
 ```
-<br>
 ```
     <dependencies>
          <!--........-->
