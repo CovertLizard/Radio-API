@@ -3,3 +3,4 @@ An API designed for playing MIDI files to Minecraft clients through the Bukkit A
 
 + [Maven](https://github.com/CovertLizard/Radio-API/blob/master/MAVEN.md)
 + [Caveats](https://github.com/CovertLizard/Radio-API/blob/master/Caveats.md)
++ [Examples](https://github.com/CovertLizard/Radio-API/blob/master/EXAMPLES.md)
