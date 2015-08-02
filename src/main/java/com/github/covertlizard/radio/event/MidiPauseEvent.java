@@ -19,6 +19,7 @@ public class MidiPauseEvent extends Event implements Cancellable
     /**
      * Called when a sound is loaded into a station
      * @param sound the sound instance
+     * @param pause true if it was paused
      */
     public MidiPauseEvent(MidiSound sound, boolean pause)
     {

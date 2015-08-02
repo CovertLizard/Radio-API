@@ -18,7 +18,8 @@ public class MidiTuneEvent extends Event implements Cancellable
     private boolean tune;
     /**
      * Called when a sound is loaded into a station
-     * @param sound the sound instance
+     * @param player the player tuning in or out
+     * @param tune true if they're tuning in
      */
     public MidiTuneEvent(Player player, boolean tune)
     {

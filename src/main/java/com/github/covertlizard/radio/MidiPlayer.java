@@ -33,7 +33,6 @@ public class MidiPlayer implements MetaEventListener, Receiver
     /**
      * Used for playing MIDI files
      * @param plugin the plugin instance
-     * @throws MidiUnavailableException if there are resource restrictions
      */
     public MidiPlayer(JavaPlugin plugin)
     {
@@ -100,11 +99,8 @@ public class MidiPlayer implements MetaEventListener, Receiver
 
     /**
      * Plays the sound to the select group of players
-     * @param sound the sound to play
+     * @param id the id of the sound to play
      * @param players the players to listen
-     * @throws InvalidMidiDataException
-     * @throws IOException
-     * @throws MidiUnavailableException
      */
     public void play(int id, Collection<Player> players)
     {
@@ -142,11 +138,8 @@ public class MidiPlayer implements MetaEventListener, Receiver
 
     /**
      * Plays the sound to the select group of players
-     * @param sound the sound to play
+     * @param id the id of the sound to play
      * @param players the players to listen
-     * @throws InvalidMidiDataException
-     * @throws IOException
-     * @throws MidiUnavailableException
      */
     public void play(int id, Player... players)
     {

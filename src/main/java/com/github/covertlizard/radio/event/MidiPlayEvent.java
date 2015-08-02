@@ -23,6 +23,8 @@ public class MidiPlayEvent extends Event implements Cancellable
     /**
      * Called when a sound is loaded into a station
      * @param sound the sound instance
+     * @param id the sound's id
+     * @param players the players listening to the sound
      */
     public MidiPlayEvent(MidiSound sound, int id, Collection<Player> players)
     {
